@@ -40,10 +40,11 @@ const part1 = (start, end, graph) => {
         totalPaths++;
         continue;
       }
-      if (!path.includes(neighbor) || neighbor == neighbor.toUpperCase()) {
-        tempPath.push(neighbor);
-        q.push(tempPath);
+      if (path.includes(neighbor) && neighbor == neighbor.toLowerCase()) {
+        continue;
       }
+      tempPath.push(neighbor);
+      q.push(tempPath);
     }
   }
 
