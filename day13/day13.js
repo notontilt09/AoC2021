@@ -81,9 +81,6 @@ const part2 = (data) => {
     nextGrid = fold(nextGrid, instruction);
   }
 
-  // console.log(nextGrid);
-  // console.log(nextGrid[0].toString());
-
   for (let line of nextGrid) {
     let str = ''
     for (let char of line) {
