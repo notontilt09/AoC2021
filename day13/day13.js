@@ -82,11 +82,7 @@ const part2 = (data) => {
   }
 
   for (let line of nextGrid) {
-    let str = ''
-    for (let char of line) {
-      str += char == '.' ? ' ' : char
-    }
-    console.log(str);
+    console.log(line.toString().replace(/,|\./g, ' '))
   }
 }
 
