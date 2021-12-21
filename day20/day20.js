@@ -59,6 +59,8 @@ const enhanceImage = (inputImg) => {
         }
     }
 
+    // return output
+
     
     output = output.map(line => {
         if (line) {
